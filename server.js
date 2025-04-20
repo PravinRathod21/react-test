@@ -27,7 +27,7 @@ db.connect((err) => {
 
 // Route
 app.get("/getdata", (req, res) => {
-  const sql = "SELECT * FROM users"; // change table name
+  const sql = "SELECT * FROM login"; // change table name
   db.query(sql, (err, result) => {
     if (err) {
       return res.status(500).json({ error: err });
